@@ -1,0 +1,230 @@
+#content
+	.content-nav
+		width: 740px
+		margin: 0 auto
+		//background: $blue
+		margin:
+			top: 10px
+		display: flex
+		justify-content: flex-end
+
+		.link
+			font:
+				weight: bold
+			margin:
+				left: 20px
+			cursor: pointer
+
+			&:hover
+				color: $red
+
+	.content-container
+		width: 840px
+		height: 550px
+		//background: $orange
+		margin: 0 auto
+			top: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+
+		.left
+			border:
+				width: 20px 30px 20px 0px
+				style: solid
+				color: transparent black transparent transparent
+				radius: 3px
+			cursor: pointer
+			margin:
+				right: 10px
+
+			&:hover
+				border-color: transparent $red transparent transparent
+
+		.right
+			border:
+				width: 20px 0px 20px 30px
+				style: solid
+				color: transparent transparent transparent black
+				radius: 3px
+			cursor: pointer
+			margin:
+				left: 10px
+
+			&:hover
+				border-color: transparent transparent transparent $red
+
+		.content-Background
+			width: 760px
+			height: 510px
+			background: white
+			border:
+				radius: 3px
+			box-shadow: 0px 0px 3px 0px #aaa
+			padding: 20px 0px
+			overflow-x: hidden
+
+			.content-belt
+				display: flex
+				//background: $blue
+				transition: all 800ms ease-in-out
+				margin-left: 0px
+				flex-wrap: no-wrap
+				padding-right: 20px
+
+				.content-unit
+					min-width: 720px
+					height: 510px
+					//background: $orange
+					margin:
+						left: 20px
+
+					h2
+						margin: 0px
+							bottom: 10px
+					p
+						margin: 0px
+							bottom: 10px
+
+				#about-me
+					background: url("../img/about-me/bg.jpg")
+						repeat: no-repeat
+						position: bottom right
+						size: 400px
+
+					p
+						&:nth-of-type(1)
+							width: 460px
+
+						&:nth-of-type(2)
+							width: 460px
+
+						&:nth-of-type(3)
+							width: 380px
+
+				#services
+					background: url("../img/services/bg.jpg")
+						repeat: no-repeat
+						position: bottom right
+						//size: 400px
+
+					p
+						span
+							font:
+								size: 16px
+								weight: bold
+							margin-bottom: 5px
+							color: black
+
+				#examples
+					background: url("../img/services/bg.jpg")
+						repeat: no-repeat
+						position: bottom right
+
+					i
+						font-size: 13px
+
+					span
+						font:
+							size: 16px
+							weight: bold
+						color: black
+						margin:
+							top: 20px
+						display: block
+
+					.examples-web
+						margin:
+							top: 20px
+						display: flex
+
+						.web-unit
+							width: 140px
+							height: 80px
+							cursor: pointer
+							border: 2px solid $silver
+								radius: 4px
+							margin-right: 5px
+
+							&:nth-of-type(1)
+								background: url("../img/examples/helix.png")
+									size: cover
+									position: center
+
+							&:nth-of-type(2)
+								background: url("../img/examples/alpha.jpg")
+									size: cover
+									position: center
+
+							&:nth-of-type(3)
+								background: url("../img/examples/stark.jpg")
+									size: cover
+									position: center
+
+					.web-modal
+						width: 100vw
+						height: 100vh
+						position: fixed
+						background: transparentize(black , .3)
+						left: 0
+						top: 0
+						z-index: 1
+						//display: flex
+						display: none
+						justify-content: center
+						align-items: flex-start
+
+						.modal-unit
+							background: white
+							margin-top: 70px
+							border:
+								radius: 2px
+							padding: 10px
+								bottom: 5px
+							display: none
+
+							.modal-content
+								max-width: 800px
+								opacity: 0
+								transition: 600ms
+
+							.modal-footer
+								//background: $blue
+								display: flex
+								height: 0px
+								opacity: 0
+								justify-content: space-between
+								align-items: flex-end
+								transition: 400ms
+
+								.modal-info
+									//background: $green
+									.title
+										font:
+											weight: bold
+
+								.modal-close
+									//background: $orange
+									cursor: pointer
+
+									span
+										display: inline-block
+										margin-top: 0px
+										font-size: 20px
+											
+
+								
+
+							
+
+				#hireMe
+					background: url("../img/services/bg.jpg")
+						repeat: no-repeat
+						position: bottom right
+
+
+
+
+
+
+
